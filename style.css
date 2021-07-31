@@ -10,6 +10,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
 }
@@ -192,7 +196,7 @@ header {
   top: 0;
   right: -20rem;
   transition: all 1s;
-  z-index: 1;
+  z-index: 150;
 }
 
 .show-menu .sidebar {
@@ -528,7 +532,6 @@ header {
   width: 100%;
   height: 100vh;
   background: url(/imagens/bg-orcamento.jpg);
-
   object-fit: cover;
   display: flex;
   justify-content: center;
@@ -537,7 +540,7 @@ header {
 
 .orcamento-wrapper {
   width: 60%;
-  height: 50%;
+  height: 80%;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
   box-shadow: 0 0.1rem 0.3rem #000;
@@ -589,4 +592,54 @@ header {
   padding: 1rem;
   cursor: pointer;
   grid-column: 2;
+}
+
+footer {
+  width: 100%;
+  height: 7rem;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content p {
+  font-family: var(--font-secodary);
+  color: #a7a7a7;
+  font-size: 1.2rem;
+}
+
+.social-list a {
+  margin: 0 2rem;
+  color: #a7a7a7;
+  font-size: 1.3rem;
+}
+
+.social-list ul {
+  display: flex;
+}
+
+#link-topo {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+
+  background: #ff0099;
+  background: -webkit-linear-gradient(to left, #ff0099, #493240);
+  background: linear-gradient(to left, #ff0099, #493240);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #fff;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
 }
