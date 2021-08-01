@@ -647,6 +647,10 @@ footer {
 /*--- RESPONSIVIDADE ---*/
 
 @media screen and (max-device-width: 480px) {
+  .container {
+    overflow: hidden;
+  }
+
   .banner {
     left: 5%;
   }
@@ -713,9 +717,5 @@ footer {
 
   .social-list ul li {
     padding: 0.2rem 0;
-  }
-
-  #link-topo {
-    display: none;
   }
 }
