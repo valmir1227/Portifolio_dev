@@ -643,3 +643,79 @@ footer {
   color: #fff;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
 }
+
+/*--- RESPONSIVIDADE ---*/
+
+@media screen and (max-device-width: 480px) {
+  .banner {
+    left: 5%;
+  }
+
+  .banner h1 {
+    font-size: 3rem;
+  }
+
+  .banner p {
+    font-size: 1.5rem;
+  }
+
+  .conhecimentos {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 5%;
+    right: 5%;
+  }
+
+  .conhecimento-text p {
+    word-break: break-word;
+  }
+
+  .projetos {
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+
+  .contato-wrapper {
+    width: 90%;
+  }
+
+  .btn-submit {
+    height: 3rem;
+  }
+
+  .orcamento-wrapper {
+    width: 90%;
+    height: auto;
+  }
+
+  .orcamento-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .group-layout div input {
+    margin-bottom: 2rem;
+  }
+
+  .footer-content {
+    width: 100%;
+  }
+
+  .social-list ul {
+    flex-direction: column;
+  }
+
+  .social-list ul li {
+    padding: 0.2rem 0;
+  }
+
+  #link-topo {
+    display: none;
+  }
+}
