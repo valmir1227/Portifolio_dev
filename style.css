@@ -24,6 +24,10 @@ body {
   --font-action: "Mulish", sans-serif;
 }
 
+.container {
+  overflow: hidden;
+}
+
 /*Menu Hamburger*/
 .hamburger {
   width: 2rem;
@@ -71,7 +75,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ff0099;
+  background-color: #1ccad8;
   color: #fff;
   font-family: var(--font-action);
   opacity: 0;
@@ -81,7 +85,7 @@ body {
   content: "";
   position: absolute;
   left: -1.1rem;
-  border-right: 0.5rem solid #ff0099;
+  border-right: 0.5rem solid #1ccad8;
   border-top: 0.5rem solid transparent;
   border-left: 0.5rem solid transparent;
   border-bottom: 0.5rem solid transparent;
@@ -159,11 +163,11 @@ header {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  background: #ff0099;
+  background: #1ccad8;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ff0099, #493240);
+  background: -webkit-linear-gradient(to left, #1ccad8, #2f97c1);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #ff0099, #493240);
+  background: linear-gradient(to left, #1ccad8, #2f97c1);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 1rem 3rem;
   border: none;
@@ -223,7 +227,7 @@ header {
 }
 
 .menu-item a:hover {
-  color: #ff0099;
+  color: #1ccad8;
 }
 
 .social-media {
@@ -238,7 +242,7 @@ header {
   height: 2.5rem;
   width: 2.5rem;
   font-size: 1.5rem;
-  background-color: #ff0099;
+  background-color: #1ccad8;
   color: rgba(255, 255, 255, 1);
   border-radius: 50%;
   display: flex;
@@ -249,7 +253,7 @@ header {
 }
 
 .social-media i:hover {
-  background-color: #702853;
+  background-color: #2f97c1;
 }
 
 /*Sessao conhecimentos*/
@@ -304,7 +308,7 @@ header {
   font-family: var(--font-primary);
   font-size: 3rem;
   color: #4b4b4b;
-  border-bottom: solid 3px #ff0099;
+  border-bottom: solid 3px #1ccad8;
   margin-bottom: 1.5rem;
 }
 
@@ -332,7 +336,7 @@ header {
 
 .conhecimentos-img-wrapper {
   grid-column: 7 / 11;
-  grid-row: 2 / 6;
+  grid-row: 1 / 3;
   width: 100%;
 }
 
@@ -399,22 +403,23 @@ header {
 .card-info h3 {
   font-family: var(--font-secodary);
   font-weight: 600;
-  color: #ff0099;
+  color: #2f97c1;
   margin-bottom: 1.5rem;
 }
 
 .card-info p {
   font-family: var(--font-secodary);
   color: #eee;
+  font-size: 1.2rem;
   font-weight: 400;
   width: 80%;
   margin-bottom: 2rem;
 }
 
 .btn {
-  background: #ff0099;
-  background: -webkit-linear-gradient(to left, #ff0099, #493240);
-  background: linear-gradient(to left, #ff0099, #493240);
+  background: #1ccad8;
+  background: -webkit-linear-gradient(to left, #1ccad8, #2f97c1);
+  background: linear-gradient(to left, #1ccad8, #2f97c1);
   font-size: 1rem;
   color: #eee;
   border: none;
@@ -499,6 +504,7 @@ header {
   border-bottom: 1px dashed #636363;
   outline: none;
   margin: 1rem 0;
+  resize: none;
 }
 
 .field-label {
@@ -511,7 +517,7 @@ header {
   transition: all 0.3s;
 }
 
-.field:focus ~ label {
+.field:focus~label {
   top: 0;
   font-size: 1rem;
 }
@@ -521,11 +527,17 @@ header {
 }
 
 .btn-submit {
-  width: 100%;
-  height: 2rem;
+  width: 60%;
+  height: 3rem;
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-top: 1rem;
+
+  transition: 0.5s;
+}
+
+.btn-submit:hover {
+  filter: brightness(90%);
 }
 
 .sessao-orcamento {
@@ -551,9 +563,9 @@ header {
   position: absolute;
   top: -2.5rem;
   left: 2rem;
-  background: #ff0099;
-  background: -webkit-linear-gradient(to left, #ff0099, #493240);
-  background: linear-gradient(to left, #ff0099, #493240);
+  background: #1ccad8;
+  background: -webkit-linear-gradient(to left, #1ccad8, #2f97c1);
+  background: linear-gradient(to left, #1ccad8, #2f97c1);
   padding: 0 3rem;
   color: #fff;
   font-family: var(--font-primary);
@@ -592,6 +604,12 @@ header {
   padding: 1rem;
   cursor: pointer;
   grid-column: 2;
+
+  transition: 0.5s;
+}
+
+.btn-orcamento:hover {
+  filter: brightness(90%);
 }
 
 footer {
@@ -632,9 +650,9 @@ footer {
   width: 3rem;
   height: 3rem;
 
-  background: #ff0099;
-  background: -webkit-linear-gradient(to left, #ff0099, #493240);
-  background: linear-gradient(to left, #ff0099, #493240);
+  background: #1ccad8;
+  background: -webkit-linear-gradient(to left, #ff0099, #2f97c1);
+  background: linear-gradient(to left, #1ccad8, #2f97c1);
 
   display: flex;
   justify-content: center;
@@ -646,7 +664,7 @@ footer {
 
 /*--- RESPONSIVIDADE ---*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 930px) {
   .conhecimentos {
     row-gap: 4rem;
   }
@@ -682,9 +700,9 @@ footer {
   }
 
   .conhecimentos-img-wrapper {
-    grid-column: 6 / 10;
-    grid-row: 2 / 6;
-    width: 150%;
+    grid-column: 7 / 11;
+    grid-row: 2 / 5;
+    width: 100%;
   }
 
   .orcamento-wrapper h1 {
@@ -787,6 +805,7 @@ footer {
   .social-list ul {
     flex-direction: column;
   }
+
   .social-list ul li {
     padding: 0.2rem 0;
   }
@@ -796,11 +815,7 @@ footer {
   }
 }
 
-@media screen and (max-device-width: 480px) {
-  .container {
-    overflow: hidden;
-  }
-
+@media screen and (min-width: 481px) and (max-width: 599px) {
   .banner {
     left: 5%;
   }
@@ -867,5 +882,100 @@ footer {
 
   .social-list ul li {
     padding: 0.2rem 0;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .banner {
+    left: 5%;
+  }
+
+  .banner h1 {
+    font-size: 3rem;
+  }
+
+  .banner p {
+    font-size: 1.5rem;
+  }
+
+  .conhecimentos {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 5%;
+    right: 5%;
+  }
+
+  .conhecimento-text p {
+    word-break: break-word;
+  }
+
+  .projetos {
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+
+  .contato-wrapper {
+    width: 90%;
+  }
+
+  .btn-submit {
+    height: 3rem;
+  }
+
+  .orcamento-wrapper {
+    width: 90%;
+    height: auto;
+  }
+
+  .orcamento-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .group-layout div input {
+    margin-bottom: 2rem;
+  }
+
+  .footer-content {
+    width: 100%;
+  }
+
+  .social-list ul {
+    flex-direction: column;
+  }
+
+  .social-list ul li {
+    padding: 0.2rem 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .sessao-header h1 {
+    font-size: 2rem;
+  }
+
+  .orcamento-wrapper {
+    width: 100%;
+  }
+
+  .orcamento-wrapper h1 {
+    padding: 0.5rem 2rem;
+    font-size: 1.3rem;
+    left: 0;
+  }
+
+  .sessao-orcamento form {
+    margin: 1rem;
+  }
+
+  .sessao-orcamento input[type="number"] {
+    width: 2rem;
+    height: 2rem;
   }
 }
