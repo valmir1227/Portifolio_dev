@@ -2,13 +2,7 @@
 
 Portfolio do desenvolvedor web
 
-## Tarefas
+### 💻 Demo
 
-O controle das tarefas desse projeto será realizado no github
-
-## Icones
-
-- :package: nova funcionalidade
-- :up: atualização
-- :beetle: correção de bug
-- :checkered_flag: release
+<img src="https://github.com/valmir1227/Portifolio_dev/blob/main/.github/home.png" />
+<img src="https://github.com/valmir1227/Portifolio_dev/blob/main/.github/conhecimentos.png" />
